@@ -20,7 +20,7 @@
   "rules": {
     "prettier/prettier": "error",
     "class-methods-use-this": "off",
-    "@typescript-eslint/camelcase": "off",
+    "camelcase": "off",
     "no-console": "off",
     "import/extensions": [
       "error",
