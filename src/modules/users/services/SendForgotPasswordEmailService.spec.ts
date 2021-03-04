@@ -3,6 +3,7 @@ import AppError from '@shared/errors/AppError';
 import FakeMailProvider from '@shared/container/providers/MailProvider/fakes/FakeMailProvider';
 import FakeUsersRepository from '../repositories/fakes/FakeUsersRepository';
 import FakeUserTokensRepository from '../repositories/fakes/FakeUserTokensRepository';
+
 import SendForgotPasswordEmailService from './SendForgotPasswordEmailService';
 
 let fakeUsersRepository: FakeUsersRepository;
@@ -31,6 +32,7 @@ describe('SendForgotPasswordEmail', () => {
       email: 'johndoe@example.com',
       password: '123456',
     });
+
     await sendForgotPasswordEmail.execute({
       email: 'johndoe@example.com',
     });
